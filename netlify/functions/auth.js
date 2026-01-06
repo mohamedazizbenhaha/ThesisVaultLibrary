@@ -23,7 +23,7 @@ export async function handler(event) {
         }
 
         // Verify credentials
-        if (verifyCredentials(username, password)) {
+        if (await verifyCredentials(username, password)) {
             const token = generateToken({ username, role: 'admin' });
 
             return {

@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
         }
 
         // Verify credentials
-        if (verifyCredentials(username, password)) {
+        if (await verifyCredentials(username, password)) {
             const token = generateToken({ username, role: 'admin' });
 
             return NextResponse.json({ token, username }, { status: 200 });
