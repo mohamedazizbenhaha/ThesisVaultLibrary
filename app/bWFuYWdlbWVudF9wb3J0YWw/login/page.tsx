@@ -118,20 +118,7 @@ export default function LoginPage() {
                     </div>
                 </div>
 
-                <div className="mt-8 p-6 border border-gray-100 bg-white/50 backdrop-blur-md rounded-[2rem] text-center">
-                    <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3">Laboratory Assistance</p>
-                    <div className="flex items-center justify-center gap-6">
-                        <div className="text-left">
-                            <p className="text-[10px] text-gray-300 font-black uppercase tracking-tight">ID</p>
-                            <p className="text-xs text-black font-black">admin</p>
-                        </div>
-                        <div className="w-px h-6 bg-gray-100" />
-                        <div className="text-left">
-                            <p className="text-[10px] text-gray-300 font-black uppercase tracking-tight">KEY</p>
-                            <p className="text-xs text-black font-black">admin123</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     );
