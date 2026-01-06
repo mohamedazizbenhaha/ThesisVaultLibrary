@@ -42,11 +42,11 @@ export async function handler(event) {
             body: JSON.stringify({ error: 'Invalid credentials' })
         };
     } catch (error) {
-        console.error('Auth error details:', error);
+        console.error('Auth error:', error);
         return {
             statusCode: 500,
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ error: 'Internal server error', details: error.message })
+            body: JSON.stringify({ error: 'Internal server error' })
         };
     }
 }
